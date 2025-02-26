@@ -120,6 +120,18 @@ while True:
       │ └── usart.c                  # USART 통신 설정 및 처리
 └── ...
 
+│ ├── /라즈베리 파이 UI
+│ ├── smartfarm_control.py           # 라즈베리 파이에서 스마트팜 제어하는 파이썬 스크립트
+│ ├── run_script.sh                  # 라즈베리 파이에서 실행할 셸 스크립트
+│ ├── smart_pam_start.desktop        # 스마트팜 GUI 시작을 위한 데스크탑 항목
+│ └── /database
+│ └── smart_farm.db                  # SQLite 데이터베이스 파일
+│ ├── /icons
+│ └── icons.7z                       # 스마트팜 관련 아이콘 파일들
+
+
+
+
 ```
 
 ---
