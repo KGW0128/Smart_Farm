@@ -45,6 +45,8 @@ if(dht11Read(&dht)) {
     DHT_Reset();
 }
 
+
+
 이 코드는 DHT11 센서로부터 온도와 습도를 읽고, 이를 UART를 통해 Raspberry Pi로 전송합니다.
 
 ### Raspberry Pi 코드 (Python)
@@ -111,15 +113,15 @@ while True:
 
 ### 설치 및 실행
 ## STM32
-1. STM32CubeMX를 사용하여 프로젝트를 생성하고, UART, ADC, 타이머 등을 설정합니다.
-2. HAL 라이브러리를 기반으로 코드 작성 후, STM32에 업로드합니다.
+- 1. STM32CubeMX를 사용하여 프로젝트를 생성하고, UART, ADC, 타이머 등을 설정합니다.
+- 2. HAL 라이브러리를 기반으로 코드 작성 후, STM32에 업로드합니다.
 ## Raspberry Pi
-1. Raspberry Pi에 Python 환경을 설정하고, pyserial 라이브러리를 설치합니다.
+- 1. Raspberry Pi에 Python 환경을 설정하고, pyserial 라이브러리를 설치합니다.
 ```
 pip install pyserial
 
 ```
-2. smart_farm.py를 실행하여 UART 통신을 시작합니다.
+- 2. smart_farm.py를 실행하여 UART 통신을 시작합니다.
 
 
 ### 데이터베이스
@@ -137,4 +139,4 @@ CREATE TABLE sensor_data (
 ---
 
 ## 결론
-이 프로젝트는 STM32와 Raspberry Pi 간의 UART 통신을 통해 스마트 팜 시스템을 실시간으로 제어하는 방법을 다룹니다. STM32는 센서 데이터를 수집하고 제어 명령을 처리하며, Raspberry Pi는 데이터를 DB에 저장하고 분석하여 STM32에 명령을 전송합니다.
+- 이 프로젝트는 STM32와 Raspberry Pi 간의 UART 통신을 통해 스마트 팜 시스템을 실시간으로 제어하는 방법을 다룹니다. STM32는 센서 데이터를 수집하고 제어 명령을 처리하며, Raspberry Pi는 데이터를 DB에 저장하고 분석하여 STM32에 명령을 전송합니다.
