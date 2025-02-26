@@ -45,6 +45,7 @@ if(dht11Read(&dht)) {
     DHT_Reset();
 }
 
+```
 
 
 이 코드는 DHT11 센서로부터 온도와 습도를 읽고, 이를 UART를 통해 Raspberry Pi로 전송합니다.
@@ -52,8 +53,8 @@ if(dht11Read(&dht)) {
 ### Raspberry Pi 코드 (Python)
 Raspberry Pi는 STM32로부터 수신한 데이터를 DB에 저장하고, 해당 데이터를 기반으로 STM32에 명령을 전송합니다.
 
-```
 
+```
 import serial
 import sqlite3
 
